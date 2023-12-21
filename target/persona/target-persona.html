@@ -1,0 +1,68 @@
+<html>
+  <style>
+    .wrapper{
+      position: relative;
+    }
+    .content, .content-shadow{
+      width: 300px;
+      min-height: 200px;
+      position: absolute;
+      background-color: #eff543;
+      clip-path: polygon(6% 9%, 98% 26%, 89% 70%, 16% 95%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .content-shadow{
+      background-color: #000;
+      clip-path: polygon(1% 25%, 100% 32%, 89% 78%, 12% 84%);
+      z-index:-1;
+    }
+    .content-wrapper{
+      margin: 20px;
+      text-align: center;
+    }
+    .title{
+      font-size: 22px;
+      font-weight: 700;
+    }
+    .nominal{
+      margin-top: 6px;
+    }
+    .progress-wrapper{
+      background-color: #0000001a;
+      width: 100%;
+      height: 16px;
+      border-radius: 4px;
+      margin-top: 6px;
+    }
+    .progress{
+      height: 100%;
+      max-width: 100%;
+      min-width: 12%;
+      border-radius: 4px;
+      background: #BE1E2D;
+      font-size: 12px;
+      line-height: 12px;
+      display: flex;
+      align-items: center;
+      padding: 0 4px;
+      color: #fff;
+      width: 24%;
+    }  
+  </style>
+    <body>
+      <div class="wrapper">
+        <div class="content">
+          <div class="content-wrapper">
+            <div class="title">Target / Goals</div>
+            <div class="nominal">Rp 200.000 / 1.000.000</div>
+            <div class="progress-wrapper">
+              <div class="progress">24%</div>
+            </div>
+          </div>
+        </div>
+        <div class="content-shadow"></div>
+      </div>
+  </body>
+</html>

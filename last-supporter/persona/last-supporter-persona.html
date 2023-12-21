@@ -1,0 +1,47 @@
+<html>
+  <style>
+    .wrapper{
+      position: relative;
+    }
+    .content, .content-shadow{
+      width: 300px;
+      min-height: 200px;
+      position: absolute;
+      background-color: #eff543;
+      clip-path: polygon(6% 9%, 98% 26%, 89% 70%, 16% 95%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .content-shadow{
+      background-color: #000;
+      clip-path: polygon(1% 25%, 100% 32%, 89% 78%, 12% 84%);
+      z-index:-1;
+    }
+    .content-wrapper{
+      margin: 20px;
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+    }
+    .title{
+      font-size: 22px;
+      font-weight: 700;
+    }
+    .nominal{
+      margin-top: 6px;
+    }
+    
+  </style>
+    <body>
+      <div class="wrapper">
+        <div class="content">
+          <div class="content-wrapper">
+            <div class="title">Seseorang</div>
+            <div class="nominal">5x</div>
+          </div>
+        </div>
+        <div class="content-shadow"></div>
+      </div>
+  </body>
+</html>

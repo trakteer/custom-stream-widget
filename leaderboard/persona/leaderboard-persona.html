@@ -1,0 +1,201 @@
+<html>
+  <style>
+    .wrapper{
+      position: relative;
+    }
+    .content, .content-shadow{
+      width: 300px;
+      min-height: 400px;
+      position: absolute;
+      background-color: #eff543;
+      clip-path: polygon(6% 9%, 98% 6%, 89% 90%, 16% 95%);
+      display: flex;
+      justify-content: center;
+    }
+    .content-shadow{
+      background-color: #000;
+      clip-path: polygon(1% 15%, 100% 32%, 90% 98%, 12% 84%);
+      z-index:-1;
+    }
+    .content-wrapper{
+      margin: 20px;
+      text-align: center;
+      width: 68%;
+    }
+    .title{
+      font-size: 22px;
+      font-weight: 700;
+      margin-top: 26px;
+    }
+    .subtitle{
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+    .supporter {
+      display: flex;
+      justify-content: space-between;
+      padding: 7px;
+    }
+    .no {
+      margin-right: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      background: white;
+      border-radius: 9999px;
+      font-size: .8em;
+      width: 18px;
+      height: 18px;
+      top: -5px;
+      left: -5px;
+    }
+    .name {
+      margin-right: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-grow: 1;
+      /* Overflow */
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .name > strong {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .avatar {
+      position: relative;
+    }
+    .avatar > img {
+      margin-right: 10px;
+      width: 40px;
+      height: 40px;
+      border-radius: 9999px;
+      background: #fff;
+    }
+    .avatar > svg {
+      width: 16px;
+      height: 22px;
+      position: absolute;
+      bottom: -7px;
+      right: 7px;
+    }
+    .supporter-content {
+      display: flex;
+      width: 75%;
+    }
+    .unit {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: var(--fontFamily);
+      font-weight: 300;
+    }
+    .unit > img {
+      margin-right: 10px;
+      width: 20px;
+      height: 20px;
+    }
+    .unit-count {
+      margin-right: 8px;
+    }
+  </style>
+    <body>
+      <div class="wrapper">
+        <div class="content">
+          <div class="content-wrapper">
+            <div class="title">LeaderBoard</div>
+            <div class="subtitle">Top Supporter 7 hari terakhir</div>
+            <div class="supporter-wrapper">
+
+              <div class="supporter">
+                <div class="supporter-content">
+                  <div class="avatar">
+                    <div class="no">1</div>
+                    <img src="https://assets.trakteer.id/images/mix/default-avatar.png" />
+                  </div>
+                  <div class="name">
+                    <strong>Seseorang</strong>
+                  </div>
+                </div>
+                <div class="unit">
+                  <span class="unit-count">5x</span>
+                  <img src="https://assets.trakteer.id/images/mix/cendol.png" width="20px" height="20px">
+                </div>
+              </div>
+
+              <div class="supporter">
+                <div class="supporter-content">
+                  <div class="avatar">
+                    <div class="no">2</div>
+                    <img src="https://assets.trakteer.id/images/mix/default-avatar.png" />
+                  </div>
+                  <div class="name">
+                    <strong>Seseorang</strong>
+                  </div>
+                </div>
+                <div class="unit">
+                  <span class="unit-count">4x</span>
+                  <img src="https://assets.trakteer.id/images/mix/cendol.png" width="20px" height="20px">
+                </div>
+              </div>
+
+              <div class="supporter">
+                <div class="supporter-content">
+                  <div class="avatar">
+                    <div class="no">3</div>
+                    <img src="https://assets.trakteer.id/images/mix/default-avatar.png" />
+                  </div>
+                  <div class="name">
+                    <strong>Seseorang</strong>
+                  </div>
+                </div>
+                <div class="unit">
+                  <span class="unit-count">3x</span>
+                  <img src="https://assets.trakteer.id/images/mix/cendol.png" width="20px" height="20px">
+                </div>
+              </div>
+
+              <div class="supporter">
+                <div class="supporter-content">
+                  <div class="avatar">
+                    <div class="no">4</div>
+                    <img src="https://assets.trakteer.id/images/mix/default-avatar.png" />
+                  </div>
+                  <div class="name">
+                    <strong>Seseorang</strong>
+                  </div>
+                </div>
+                <div class="unit">
+                  <span class="unit-count">2x</span>
+                  <img src="https://assets.trakteer.id/images/mix/cendol.png" width="20px" height="20px">
+                </div>
+              </div>
+
+              <div class="supporter">
+                <div class="supporter-content">
+                  <div class="avatar">
+                    <div class="no">5</div>
+                    <img src="https://assets.trakteer.id/images/mix/default-avatar.png" />
+                  </div>
+                  <div class="name">
+                    <strong>Seseorang</strong>
+                  </div>
+                </div>
+                <div class="unit">
+                  <span class="unit-count">1x</span>
+                  <img src="https://assets.trakteer.id/images/mix/cendol.png" width="20px" height="20px">
+                </div>
+              </div>
+
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-shadow"></div>
+      </div>
+  </body>
+</html>
