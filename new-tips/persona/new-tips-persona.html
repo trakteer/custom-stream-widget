@@ -1,0 +1,48 @@
+<html>
+  <style>
+    .wrapper{
+      position: relative;
+    }
+    .content, .content-shadow{
+      width: 450px;
+      min-height: 200px;
+      position: absolute;
+      background-color: #eff543;
+      clip-path: polygon(6% 9%, 98% 26%, 89% 70%, 16% 95%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .content-shadow{
+      background-color: #000;
+      clip-path: polygon(1% 25%, 100% 32%, 89% 78%, 12% 84%);
+      z-index:-1;
+    }
+    .content-wrapper{
+      margin: 20px;
+      text-align: center;
+    }
+    .title{
+      font-size: 22px;
+      font-weight: 700;
+    }
+    .supporter-message{
+      margin-top: 6px;
+    }
+    .grey-color{
+      color: #5a5555;
+    }
+    
+  </style>
+    <body>
+      <div class="wrapper">
+        <div class="content">
+          <div class="content-wrapper">
+            <div class="title"><span class="grey-color">Seseorang</span> Mentraktir <span class="grey-color">2 Cendol</span></div>
+            <div class="supporter-message">"Selalu berkarya!!!"</div>
+          </div>
+        </div>
+        <div class="content-shadow"></div>
+      </div>
+  </body>
+</html>
