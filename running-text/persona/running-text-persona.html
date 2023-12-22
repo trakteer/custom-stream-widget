@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <style>
+      .flex{
+        display:flex;
+      }
+      .flex-row{
+        flex-direction:row;
+      }
+      .title{
+        margin-right:8px;
+      }
+      .msg{
+        margin-right:8px;
+      }
+      .separator-bull {
+        display: inline-block;color: #000;
+      }
+      .wrapper{
+        position: relative;
+      }
+      .content, .content-shadow{
+        width: 100%;
+        min-height: 36px;
+        position: absolute;
+        background-color: #eff543;
+        clip-path: polygon(6% 9%, 98% 26%, 89% 70%, 16% 95%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .content-shadow{
+        background-color: #000;
+        clip-path: polygon(0 14%, 96% 0, 100% 88%, 10% 100%);
+        z-index:-1;
+      }
+      .content-wrapper{
+        margin: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="wrapper">
+      <div class="content">
+        <div class="content-wrapper">
+          <div class="flex flex-row">
+            <div class="body flex flex-row">
+              <!-- <template id="supporters"> -->
+                <div class="msg">{display_name} mentraktir {quantity} {unit_name}</div>
+                <div class="msg">{support_message}</div>
+              <!-- </template> -->
+              <!-- <template id="seperator"> -->
+                <div class="separator-bull">&bull;</div>
+              <!-- </template> -->
+            </div>
+            <div class="msg">{rt_messages}</div>
+          </div>
+        </div>
+      </div>
+      <div class="content-shadow"></div>
+    </div>
+
+   
+  </body>
+</html>
+
+<!-- 
+  <div class="flex flex-row">
+    <div class="body flex flex-row">
+      <template id="supporters">
+        <div class="msg">{display_name} mentraktir {quantity} {unit_name}</div>
+        <div class="msg">{support_message}</div>
+      </template>
+      <template id="seperator">
+        <div class="separator-bull">&bull;</div>
+      </template>
+    </div>
+    <div class="msg">{rt_messages}</div>
+  </div>
+ -->
